@@ -40,7 +40,7 @@
   var m = $('#main'),
       s = $('#sidebar'),
 	  t = $('.toc-aside'),
-	  a = $('.toc-article h2'),
+	  a = $('.toc-title'),
 	  tl = $('.toc-article li'),
 	  to = $('.toc-article ol'),
 	  ta = $('.toc-article'),
