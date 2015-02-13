@@ -4,12 +4,19 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | SummerWinds</title>
+    <title>主题修改 之 增加Github链接 | SummerWinds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Summer Winds">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="参考Landscape-F  
+修改 themes/pacman/_config.yml,增加  
+1github: https://github.com/summerwinds
+
+
+
+修改 themes/pacman/layout/_partial/header.ejs,增加
+12345&amp;lt;n">
     
     
     
@@ -72,15 +79,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015-02-12/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015-02-13/Theme-Modified-Github/" title="主题修改 之 增加Github链接" itemprop="url">主题修改 之 增加Github链接</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Summer Winds">Summer Winds</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-02-12T04:27:11.357Z" itemprop="datePublished">2月 12 2015</time>
-    更新日期:<time datetime="2015-02-11T12:49:23.562Z" itemprop="dateModified">2月 11 2015</time>
+    <time datetime="2015-02-13T04:23:49.000Z" itemprop="datePublished">2月 13 2015</time>
+    更新日期:<time datetime="2015-02-13T04:29:51.809Z" itemprop="dateModified">2月 13 2015</time>
     
   </p>
 </header>
@@ -89,37 +96,41 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+		<p>参考Landscape-F  </p>
+<p>修改 themes/pacman/_config.yml,增加  </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">githu<span class="variable">b:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/summerwinds</div></pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>修改 themes/pacman/layout/_partial/header.ejs,增加</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">id</span>=<span class="value">"sub-nav"</span>&gt;</span></div><div class="line">  <span class="vbscript">&lt;% <span class="keyword">if</span> (theme.github){ %&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="title">a</span> <span class="attribute">id</span>=<span class="value">"nav-github-link"</span> <span class="attribute">class</span>=<span class="value">"nav-icon"</span> <span class="attribute">href</span>=<span class="value">"&lt;%- theme.github %&gt;"</span> <span class="attribute">title</span>=<span class="value">"SummerWinds's Github"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line">  <span class="vbscript">&lt;% } %&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div></pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>修改 themes/pacman/source/css/_partial/header.styl,增加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#sub-nav</span></div><div class="line">  float: right</div><div class="line">  margin-right: .<span class="number">5</span>em</div><div class="line">  margin-top: <span class="number">0</span>em</div><div class="line">  padding-top: <span class="number">0</span>em</div><div class="line">  a</div><div class="line">    &:hover:before</div><div class="line">      color color-nav</div><div class="line">      text-shadow <span class="number">0</span> <span class="number">0</span> <span class="number">10</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.5</span>)</div><div class="line">      </div><div class="line"><span class="comment">#nav-github-link</span></div><div class="line">  &:before</div><div class="line">    content: <span class="string">"\f09b"</span></div><div class="line">  </div><div class="line"><span class="variable">$nav</span>-link</div><div class="line">  float: left</div><div class="line">  color: <span class="comment">#fff</span></div><div class="line">  opacity: <span class="number">0.6</span></div><div class="line">  text-decoration: none</div><div class="line">  text-shadow: <span class="number">0</span> <span class="number">1</span>px rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>)</div><div class="line">  transition: opacity <span class="number">0.2</span>s</div><div class="line">  display: block</div><div class="line">  padding: <span class="number">20</span>px <span class="number">15</span>px</div><div class="line">  &:hover</div><div class="line">  opacity: <span class="number">1</span></div><div class="line">  </div><div class="line">.nav-icon</div><div class="line">  @extend <span class="variable">$nav</span>-link</div><div class="line">  font-family: font-icon-family</div><div class="line">  text-align: center</div><div class="line">  font-size: nav-icon-font-size</div><div class="line">  width: nav-icon-font-size</div><div class="line">  height: nav-icon-font-size</div><div class="line">  padding: <span class="number">0</span>px <span class="number">0</span>px</div><div class="line">  position: relative</div><div class="line">  cursor: pointer</div></pre></td></tr></table></figure>
+
   
 	</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Hexo/">Hexo</a><a href="/tags/Theme/">Theme</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015-02-12/hello-world/" data-title="Hello World | SummerWinds" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2015-02-13/Theme-Modified-Github/" data-title="主题修改 之 增加Github链接 | SummerWinds" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -129,13 +140,21 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015-02-12/Cordova-Android-Studio-config/" title="Win7(x64)下Android Studio 1.0.2 +Cordova/Phonegap(4.2.0)开发环境搭建指南">
+ <a href="/2015-02-13/Theme-Modified-Gotop/" title="主题修改 之 返回顶部按扭">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  Win7(x64)下Android Studio 1.0.2 +Cordova/Phonegap(4.2.0)开发环境搭建指南</span>
+  主题修改 之 返回顶部按扭</span>
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2015-02-12/Cordova-Android-Studio-config/"  title="Win7(x64)下Android Studio 1.0.2 +Cordova/Phonegap(4.2.0)开发环境搭建指南">
+ <strong>NEXT:</strong><br/> 
+ <span>Win7(x64)下Android Studio 1.0.2 +Cordova/Phonegap(4.2.0)开发环境搭建指南
+</span>
+</a>
+</div>
 
 </nav>
 
@@ -149,7 +168,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  
   </div>
 
 <div id="asidepart">
