@@ -4,20 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>主题修改 之 文章目录切换 | SummerWinds</title>
+    <title>标签云测试 | SummerWinds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Summer Winds">
     
-    <meta name="description" content="参考Landscape-F  
-增加文件到主题目录
-1themes/pacman/source/js/toc_aside_toggle.js
-
-
-
-修改 bottom-btn.ejs
-themes/pacman/layout/_partial/bottom-btn.ejs,增加
-1234567&amp;lt">
+    <meta name="description" content="标签云测试">
     
     
     
@@ -93,15 +85,15 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015-02-13/Theme-Modified-Toc-Toggle/" title="主题修改 之 文章目录切换" itemprop="url">主题修改 之 文章目录切换</a>
+      <a href="/2015-02-14/Tag-Cloud-Test/" title="标签云测试" itemprop="url">标签云测试</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Summer Winds">Summer Winds</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-02-13T07:24:36.000Z" itemprop="datePublished">2月 13 2015</time>
-    更新日期:<time datetime="2015-02-13T09:24:01.629Z" itemprop="dateModified">2月 13 2015</time>
+    <time datetime="2015-02-14T07:31:24.000Z" itemprop="datePublished">2月 14 2015</time>
+    更新日期:<time datetime="2015-02-14T09:35:18.189Z" itemprop="dateModified">2月 14 2015</time>
     
   </p>
 </header>
@@ -110,50 +102,17 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#增加文件到主题目录"><span class="toc-number">1.</span> <span class="toc-text">增加文件到主题目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_bottom-btn-ejs"><span class="toc-number">2.</span> <span class="toc-text">修改 bottom-btn.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_sidebar-ejs"><span class="toc-number">3.</span> <span class="toc-text">修改 sidebar.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_varialbles-styl"><span class="toc-number">4.</span> <span class="toc-text">修改 varialbles.styl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_bottom-btn-styl"><span class="toc-number">5.</span> <span class="toc-text">修改 bottom-btn.styl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_helper-styl"><span class="toc-number">6.</span> <span class="toc-text">修改 helper.styl</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#标签云测试"><span class="toc-number">1.</span> <span class="toc-text">标签云测试</span></a></li></ol>
 		</div>
 		
-		<p>参考Landscape-F  </p>
-<h2 id="增加文件到主题目录">增加文件到主题目录</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">themes<span class="regexp">/pacman/</span><span class="keyword">source</span><span class="regexp">/js/</span>toc_aside_toggle.js</div></pre></td></tr></table></figure>
-
-
-
-<h2 id="修改_bottom-btn-ejs">修改 bottom-btn.ejs</h2>
-<p>themes/pacman/layout/_partial/bottom-btn.ejs,增加</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (is_post()&& (page.toc !== <span class="literal">false</span>) && theme.toc.aside){ %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"icon-toc-toggle"</span> <span class="attribute">href</span>=<span class="value">"javascript:void(0)"</span> <span class="attribute">title</span>=<span class="value">"文章目录"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!--</span></div><div class="line">	&lt;script src="&lt;%- config.root %&gt;js/toc_aside_toggle.js"&gt;&lt;/script&gt;</div><div class="line">	--&gt;</div><div class="line">	<span class="vbscript">&lt;%- js(<span class="comment">'js/toc_aside_toggle') %&gt;</span></span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></td></tr></table></figure>
-
-
-<p>注：此步聚的前提是之前添加过 返回顶部功能。如果没有，请增加 bottom-btn.ejs 和 修改 after-footer.ejs。  </p>
-<h2 id="修改_sidebar-ejs">修改 sidebar.ejs</h2>
-<p>themes/pacman/layout/_partial/sidebar.ejs,增加 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;aside id=<span class="string">"sidebar"</span> class=<span class="string">"clearfix"</span>&gt;</div></pre></td></tr></table></figure>
-
-<h2 id="修改_varialbles-styl">修改 varialbles.styl</h2>
-<p>themes/pacman/source/css/_base/varialbles.styl,增加  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">sidebar =</span> hexo-config(<span class="string">"sidebar"</span>)</div><div class="line"><span class="variable">tocaside =</span> hexo-config(<span class="string">"toc.aside"</span>)</div></pre></td></tr></table></figure>
-
-<h2 id="修改_bottom-btn-styl">修改 bottom-btn.styl</h2>
-<p>themes/pacman/source/css/bottom-btn.styl,增加</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">if tocaside</div><div class="line">  <span class="class">.icon-toc-toggle</span></div><div class="line">    <span class="attribute">width</span> 36px</div><div class="line">    <span class="attribute">height</span> 36px</div><div class="line">    <span class="attribute">cursor</span> <span class="value">pointer</span></div><div class="line">    <span class="attribute">border-radius</span> 2px</div><div class="line">    <span class="attribute">box-shadow</span> 0 1px 3px <span class="function">rgba</span>(0,0,0,<span class="class">.2</span>)</div><div class="line">    <span class="attribute">text-decoration</span> <span class="attribute">none</span></div><div class="line">    <span class="attribute">background-color</span> <span class="id">#444</span></div><div class="line">    <span class="attribute">background-color</span> <span class="function">rgba</span>(0,0,0,0<span class="class">.7</span>)</div><div class="line">    <span class="attribute">color</span> <span class="id">#fff</span></div><div class="line">    <span class="attribute">line-height</span> 36px</div><div class="line">    <span class="attribute">font-size</span> 22px</div><div class="line">    <span class="attribute">text-align</span> <span class="value">center</span></div><div class="line">    <span class="attribute">display</span> <span class="value">inline</span>-<span class="value">block</span></div><div class="line">    <span class="attribute">font-family</span> FontAwesome</div><div class="line">    <span class="attribute">font-style</span> <span class="attribute">normal</span></div><div class="line">    <span class="attribute">font-weight</span> <span class="attribute">normal</span></div><div class="line">    -webkit-<span class="attribute">font</span>-smoothing antialiased</div><div class="line">    -moz-osx-<span class="attribute">font</span>-smoothing grayscale</div><div class="line">  <span class="class">.icon-toc-toggle</span></div><div class="line">    &<span class="pseudo">:before</span></div><div class="line">      <span class="attribute">content</span> "\f00b"</div><div class="line">  <span class="class">.icon-toc-toggle</span></div><div class="line">    &<span class="pseudo">:active</span></div><div class="line">      <span class="attribute">background-color</span> <span class="function">rgba</span>(0,0,0,<span class="class">.75</span>)</div><div class="line">  <span class="class">.icon-toc-toggle</span></div><div class="line">    &<span class="pseudo">:hover</span></div><div class="line">      <span class="attribute">background-color</span> <span class="function">rgba</span>(211,18,102,<span class="class">.95</span>)</div></pre></td></tr></table></figure>
-
-
-<p>注：此步聚的前提是之前添加过 返回顶部功能。如果没有，请增加 bottom-btn.ejs 和 bottom-btn.styl 并修改 after-footer.ejs将bottom-btn.ejs包含。</p>
-<h2 id="修改_helper-styl">修改 helper.styl</h2>
-<p>themes/pacman/source/css/_partial/helper.styl <font color="red"><em>**</em></font>部分  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#toc.toc-aside</span></div><div class="line">  display none</div><div class="line">  width <span class="number">13</span>%</div><div class="line">  position fixed</div><div class="line">  right <span class="number">2</span>%</div><div class="line">  top <span class="number">320</span>px</div><div class="line">  **max-height: <span class="number">68</span>%**</div><div class="line">  **overflow auto**</div><div class="line">  line-height <span class="number">1.5</span>em</div><div class="line">  font-size <span class="number">1</span>em</div></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class">.toc-title</span></div><div class="line">  <span class="attribute">cursor</span> <span class="value">pointer</span></div><div class="line">  <span class="attribute">display</span> <span class="value">block</span></div><div class="line">  <span class="attribute">margin</span> <span class="class">.5em</span> 0</div></pre></td></tr></table></figure>
-
+		<h6 id="标签云测试">标签云测试</h6>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Hexo/">Hexo</a><a href="/tags/Theme/">Theme</a>
+  <span></span> <a href="/tags/Bar/">Bar</a><a href="/tags/Baz/">Baz</a><a href="/tags/Foo/">Foo</a><a href="/tags/image/">image</a><a href="/tags/video/">video</a><a href="/tags/fancybox/">fancybox</a><a href="/tags/tag/">tag</a><a href="/tags/text/">text</a><a href="/tags/blog/">blog</a><a href="/tags/theme/">theme</a><a href="/tags/tag/">tag</a><a href="/tags/tagcloud/">tagcloud</a><a href="/tags/tech/">tech</a><a href="/tags/info/">info</a><a href="/tags/rss/">rss</a><a href="/tags/HTML5/">HTML5</a><a href="/tags/iOS/">iOS</a><a href="/tags/CSS3/">CSS3</a><a href="/tags/JavaScript/">JavaScript</a>
   </div>
 
 
@@ -166,7 +125,7 @@ var _hmt = _hmt || [];
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015-02-13/Theme-Modified-Toc-Toggle/" data-title="主题修改 之 文章目录切换 | SummerWinds" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2015-02-14/Tag-Cloud-Test/" data-title="标签云测试 | SummerWinds" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -175,19 +134,11 @@ var _hmt = _hmt || [];
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015-02-14/Tag-Cloud-Test/" title="标签云测试">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  标签云测试</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015-02-13/Theme-Modified-Gotop/"  title="主题修改 之 返回顶部按扭">
+<a href="/2015-02-13/Theme-Modified-Toc-Toggle/"  title="主题修改 之 文章目录切换">
  <strong>NEXT:</strong><br/> 
- <span>主题修改 之 返回顶部按扭
+ <span>主题修改 之 文章目录切换
 </span>
 </a>
 </div>
@@ -204,7 +155,7 @@ var _hmt = _hmt || [];
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#增加文件到主题目录"><span class="toc-number">1.</span> <span class="toc-text">增加文件到主题目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_bottom-btn-ejs"><span class="toc-number">2.</span> <span class="toc-text">修改 bottom-btn.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_sidebar-ejs"><span class="toc-number">3.</span> <span class="toc-text">修改 sidebar.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_varialbles-styl"><span class="toc-number">4.</span> <span class="toc-text">修改 varialbles.styl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_bottom-btn-styl"><span class="toc-number">5.</span> <span class="toc-text">修改 bottom-btn.styl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改_helper-styl"><span class="toc-number">6.</span> <span class="toc-text">修改 helper.styl</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#标签云测试"><span class="toc-number">1.</span> <span class="toc-text">标签云测试</span></a></li></ol>
   </div>
 
 <div id="asidepart">
